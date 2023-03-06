@@ -39,3 +39,10 @@ Both groups understand that it is unacceptable to state their interests in the b
 > 在软件开发中，incremental updates（增量更新）指的是将一个系统、应用程序或数据集的更新内容分成多个较小的部分进行逐步更新的过程。相比于全量更新，增量更新具有更高的效率和更低的风险。
 >
 > cherry-pick（精选）指的是从一个代码库中选择某个特定的提交（commit），并将其应用到另一个代码库中的过程。通常情况下，cherry-pick用于在不同的代码库之间复用代码或修复特定的问题。
+
+<br>
+---
+
+**[Back to contents of the chapter（返回章节目录）](introduction.md)**
+
+- **Next Section（下一节）：[Google’s Approach to Service Management:Site Reliability Engineering（谷歌的服务管理方法：SRE）](google's_approach_to_service_management_site_reliability_engineering.md)**

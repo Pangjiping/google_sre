@@ -45,3 +45,11 @@ We’ve found that Google SRE’s approach to running large-scale systems has ma
 Despite these net gains, the SRE model is characterized by its own distinct set of challenges. One continual challenge Google faces is hiring SREs: not only does SRE compete for the same candidates as the product development hiring pipeline, but the fact that we set the hiring bar so high in terms of both coding and system engineering skills means that our hiring pool is necessarily small. As our discipline is relatively new and unique, not much industry information exists on how to build and manage an SRE team (although hopefully this book will make strides in that direction!). And once an SRE team is in place, their potentially unorthodox approaches to service management require strong management support. For example, the decision to stop releases for the remainder of the quarter once an error budget is depleted might not be embraced by a product development team unless mandated by their management.
 
 尽管存在这些净收益，SRE模式也面临着自己的一系列挑战。谷歌持续面临的一个挑战是聘请SRE：SRE不仅与产品开发招聘竞争同一候选人，而且我们在编码和系统工程技能方面设定了非常高的招聘标准，这意味着我们的招聘池必然很小。由于我们的学科相对较新且独特，行业中并没有太多有关如何构建和管理SRE团队的信息（尽管希望本书能在这方面取得进展！）。一旦建立了SRE团队，他们对服务管理的潜在非常规方法需要得到强有力的管理支持。例如，一旦错误预算用完，决定在季度剩余时间内停止发布可能不会得到产品开发团队的支持，除非被他们的管理层指示这样做。
+
+<br>
+---
+
+**[Back to contents of the chapter（返回章节目录）](introduction.md)**
+
+- **Previous Section（上一节）:[The Sysadmin Approach to Service Management（系统管理员的服务管理方法）](the_sysadmin_approach_to_service_management.md)**
+- **Next Section（下一节）：[Tenets of SRE（SRE的原则）](tenets_of_sre.md)**
