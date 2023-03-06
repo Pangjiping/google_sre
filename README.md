@@ -10,13 +10,13 @@ Site Reliability Engineering: How Google Runs Production Systems中文译
 
 * [Foreword（前言）](./src/foreword.md)
 * [Preface（序言）](./src/preface.md)
-* Part I. Introduction（介绍）
-  * Chapter 1. [Introduction（介绍）](./src/part-1/chapter-01/introduction.md)
+* [Part I. Introduction（介绍）](./src/part-1/introduction.md)
+  * [Chapter 1. Introduction（介绍）](./src/part-1/chapter-01/introduction.md)
     * [The Sysadmin Approach to Service Management（系统管理员的服务管理方法）](./src/part-1/chapter-01/the_sysadmin_approach_to_service_management.md)
     * [Google’s Approach to Service Management:Site Reliability Engineering（谷歌的服务管理方法：SRE）](./src/part-1/chapter-01/google's_approach_to_service_management_site_reliability_engineering.md)
     * [Tenets of SRE（SRE的原则）](./src/part-1/chapter-01/tenets_of_sre.md)
     * [The End of the Beginning（本章结语）](./src/part-1/chapter-01/the_end_of_the_beginning.md)
-  * Chapter 2. [The Production Environment at Google, from the Viewpoint of an SRE（从SRE的角度介绍Google的生产环境）](./src/part-1/chapter-02/the_production_environment_at_google_from_the_viewpoint_of_an_sre.md)
+  * [Chapter 2. The Production Environment at Google, from the Viewpoint of an SRE（从SRE的角度介绍Google的生产环境）](./src/part-1/chapter-02/the_production_environment_at_google_from_the_viewpoint_of_an_sre.md)
     * [Hardware（硬件）](./src/part-1/chapter-02/hardware.md)
     * [System Software That “Organizes” the Hardware（“组织”硬件的系统软件）](./src/part-1/chapter-02/system_software_that_"organizes"_the_hardware.md)
     * [Other System Software（其他系统软件）](./src/part-1/chapter-02/other_system_software.md)
