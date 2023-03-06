@@ -15,3 +15,4 @@ Site Reliability Engineering: How Google Runs Production Systems中文译
     * [The Sysadmin Approach to Service Management（系统管理员的服务管理方法）](./src/part-1/chapter-01/the_sysadmin_approach_to_service_management.md)
     * [Google’s Approach to Service Management:Site Reliability Engineering（谷歌的服务管理方法：SRE）](./src/part-1/chapter-01/google's_approach_to_service_management_site_reliability_engineering.md)
     * [Tenets of SRE（SRE的原则）](./src/part-1/chapter-01/tenets_of_sre.md)
+    * [The End of the Beginning（本章结语）](./src/part-1/chapter-01/the_end_of_the_beginning.md)
