@@ -7,6 +7,7 @@ Site Reliability Engineering represents a significant break from existing indust
 SRE代表了管理大型复杂服务的现有行业最佳实践的重大突破。最初由熟悉这个领域的软件工程师推动，这个领域已经发展成为更多的东西：一组原则、一套实践、一套激励机制以及更广泛软件工程学科中的一个领域。本书的剩余部分将详细探讨SRE的方法。
 
 <br>
+
 ---
 
 **[Back to contents of the chapter（返回章节目录）](introduction.md)**

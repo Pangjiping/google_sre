@@ -189,6 +189,7 @@ Software systems become slower as load is added to them. A slowdown in a service
 随着负载的增加，软件系统变得越来越慢。服务的减速等同于容量的损失。在某个时刻，系统的减速将停止服务，这对应于无限减速。SRE会根据特定响应速度的容量目标进行配置，因此对服务的性能非常关注。SRE和产品开发人员将（也应该）监测和修改服务以提高其性能，从而增加容量并提高效率。
 
 <br>
+
 ---
 
 **[Back to contents of the chapter（返回章节目录）](introduction.md)**

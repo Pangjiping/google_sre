@@ -41,6 +41,7 @@ Both groups understand that it is unacceptable to state their interests in the b
 > cherry-pick（精选）指的是从一个代码库中选择某个特定的提交（commit），并将其应用到另一个代码库中的过程。通常情况下，cherry-pick用于在不同的代码库之间复用代码或修复特定的问题。
 
 <br>
+
 ---
 
 **[Back to contents of the chapter（返回章节目录）](introduction.md)**
