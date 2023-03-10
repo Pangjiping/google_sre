@@ -76,16 +76,22 @@ Load testing determined that our backend server can handle about 100 queries per
 * During updates, one task at a time will be unavailable, leaving 36 tasks.
 * A machine failure might occur during a task update, leaving only 35 tasks, just enough to serve peak load.
 
-负载测试确定我们的后端服务器可以处理大约每秒100个查询（QPS）。使用有限用户组进行的试验表明，我们预计最高负载为大约3,470个QPS，因此我们需要至少35个任务。然而，以下考虑因素意味着我们需要至少37个任务才能完成该作业，或者N+2:
+负载测试确定我们的后端服务器可以处理大约每秒100个查询（QPS）。使用有限用户组进行的试验表明，我们预计最高负载为大约3470个QPS，因此我们需要至少35个任务。然而，以下考虑因素意味着我们需要至少37个任务才能完成该作业，或者N+2:
 
 * 在升级期间，一个任务将会是不可用的，此时剩下36个任务。
 * 升级期间可能会有机器出现故障，此时剩下35个任务，恰好可以满足服务峰值负载。
 
 A closer examination of user traffic shows our peak usage is distributed globally: 1,430 QPS from North America, 290 from South America, 1,400 from Europe and Africa, and 350 from Asia and Australia. Instead of locating all backends at one site, we distribute them across the USA, South America, Europe, and Asia. Allowing for N + 2 redundancy per region means that we end up with 17 tasks in the USA, 16 in Europe, and 6 in Asia. However, we decide to use 4 tasks (instead of 5) in South America, to lower the overhead of N + 2 to N + 1. In this case, we’re willing to tolerate a small risk of higher latency in exchange for lower hardware costs: if GSLB redirects traffic from one continent to another when our South American datacenter is over capacity, we can save 20% of the resources we’d spend on hardware. In the larger regions, we’ll spread tasks across two or three clusters for extra resiliency.
 
+对用户流量的仔细检查表明，我们的峰值使用量分布在全球。1430 QPS来自北美，290来自南美，1400来自欧洲和非洲，350来自亚洲和澳大利亚。我们没有把所有的后端放在一个站点，而是把它们分布在美国、南美、欧洲和亚洲。允许每个地区有N+2的冗余意味着我们最终在美国有17个任务，在欧洲有16个，在亚洲有6个。然而，我们决定在南美使用4个任务（而不是5个），以将N+2的开销降低到N+1。在这种情况下，我们愿意容忍较高延迟的小风险，以换取较低的硬件成本：如果GSLB在南美数据中心容量过大时将流量从一个大陆重定向到另一个大陆，我们可以节省20%的硬件资源支出。在较大的地区，我们会将任务分散到两个或三个集群中以获得额外的弹性。
+
 Because the backends need to contact the Bigtable holding the data, we need to also design this storage element strategically. A backend in Asia contacting a Bigtable in the USA adds a significant amount of latency, so we replicate the Bigtable in each region. Bigtable replication helps us in two ways: it provides resilience should a Bigtable server fail, and it lowers data-access latency. While Bigtable only offers eventual consistency, it isn’t a major problem because we don’t need to update the contents often.
 
+由于后端需要与保存数据的Bigtable通信，我们也需要战略性地设计这个存储节点。亚洲的后端与美国的Bigtable通信会增加大量的延迟，所以我们在每个地区都复制了Bigtable。Bigtable复制在两个方面帮助我们：如果Bigtable服务器发生故障，它可以提供弹性，并降低数据访问的延迟。虽然Bigtable只提供最终的一致性，但这并不是一个大问题，因为我们不需要经常更新内容。
+
 We’ve introduced a lot of terminology here; while you don’t need to remember it all, it’s useful for framing many of the other systems we’ll refer to later.
+
+我们在这里介绍了很多术语；虽然你不需要记住所有的术语，但它对我们以后提到的许多其他系统的框架很有用。
 
 <br>
 
