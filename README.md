@@ -28,4 +28,4 @@ Site Reliability Engineering: How Google Runs Production Systems中文译
     * [Managing Risk（管理风险）](./src/part-2/chapter-03/managing_risk.md)
     * [Measuring Service Risk（衡量服务风险）](./src/part-2/chapter-03/measuring_service_risk.md)
     * [Risk Tolerance of Services（服务的风险承受能力）](./src/part-2/chapter-03/risk_tolerance_of_services.md)
-    * [Motivation for Error Budgets（错误预算的动机）](./src/part-2/chapter-03/motivation_for_error_budgets.md)
+    * [Motivation for Error Budgets（错误预算）](./src/part-2/chapter-03/motivation_for_error_budgets.md)
