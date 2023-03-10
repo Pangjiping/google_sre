@@ -69,7 +69,7 @@ This entire chain of events is executed in the blink of an eye—just a few hund
 
 ### **Job and Data Organization**
 
-### ****
+### **负载和数据组织**
 
 Load testing determined that our backend server can handle about 100 queries per second (QPS). Trials performed with a limited set of users lead us to expect a peak load of about 3,470 QPS, so we need at least 35 tasks. However, the following considerations mean that we need at least 37 tasks in the job, or N + 2:
 
