@@ -15,7 +15,7 @@ Using an aggregate unavailability metric (i.e., "X% of all operations failed”)
 
 See Equations 3-1 and 3-2 in [Chapter 3](./../part-2/chapter-03/measuring_service_risk.md) for calculations.
 
-请参考[第三章]((./../part-2/chapter-03/measuring_service_risk.md))的Equation 3-1和E quation 3-2进行计算。
+请参考[第三章](./../part-2/chapter-03/measuring_service_risk.md)的Equation 3-1和E quation 3-2进行计算。
 
 <br>
 
