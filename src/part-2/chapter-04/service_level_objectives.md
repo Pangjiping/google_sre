@@ -20,5 +20,5 @@ This chapter describes the framework we use to wrestle with the problems of metr
 
 - [Service Level Terminology（服务水平术语）](service_level_terminology.md)
 - [Indicators in Practice（实践中的SLI）](indicators_in_practice.md)
-- [Objectives in Practice](objectives_in_practice.md)
-- [Agreements in Practice](agreements_in_practice.md)
+- [Objectives in Practice（实践中的SLO）](objectives_in_practice.md)
+- [Agreements in Practice（实践中的SLA）](agreements_in_practice.md)
