@@ -42,9 +42,9 @@ Choosing an appropriate SLO is complex. To begin with, you don’t always get to
 
 选择一个适当的SLO是复杂的。首先，你并不总是能够选择它的值 对于从外界传入你的服务的HTTP请求，每秒查询次数（QPS）指标基本上是由你的用户的愿望决定的，你不能真的为它设置一个SLO。
 
-On the other hand, you can say that you want the average latency per request to be under 100 milliseconds, and setting such a goal could in turn motivate you to write your frontend with low-latency behaviors of various kinds or to buy certain kinds of low-latency equipment. (100 milliseconds is obviously an arbitrary value, but in general lower latency numbers are good. There are excellent reasons to believe that fast is better than slow, and that user-experienced latency above certain values actually drives people away— see "Speed Matters" [Bru09] for more details.)
+On the other hand, you can say that you want the average latency per request to be under 100 milliseconds, and setting such a goal could in turn motivate you to write your frontend with low-latency behaviors of various kinds or to buy certain kinds of low-latency equipment. (100 milliseconds is obviously an arbitrary value, but in general lower latency numbers are good. There are excellent reasons to believe that fast is better than slow, and that user-experienced latency above certain values actually drives people away— see "Speed Matters" [[Bru09]](http://googleresearch.blogspot.com/2009/06/speed-matters.html) for more details.)
 
-另一方面，你可以说你希望每个请求的平均延迟在100毫秒以下，设定这样一个目标可以反过来激励你用各种低延迟的行为来编写你的前端，或者购买某些类型的低延迟设备。（100毫秒显然是一个任意的值，但一般来说，较低的延迟数字是好的。有很好的理由相信，快比慢好，而且用户体验到的超过一定值的延迟实际上会驱使人们离开--更多的细节见“速度问题”[Bru09]）。
+另一方面，你可以说你希望每个请求的平均延迟在100毫秒以下，设定这样一个目标可以反过来激励你用各种低延迟的行为来编写你的前端，或者购买某些类型的低延迟设备。（100毫秒显然是一个任意的值，但一般来说，较低的延迟数字是好的。有很好的理由相信，快比慢好，而且用户体验到的超过一定值的延迟实际上会驱使人们离开--更多的细节见“速度问题”[[Bru09]](http://googleresearch.blogspot.com/2009/06/speed-matters.html)）。
 
 Again, this is more subtle than it might at first appear, in that those two SLIs—QPS and latency—might be connected behind the scenes: higher QPS often leads to larger latencies, and it’s common for services to have a performance cliff beyond some load threshold.
 
@@ -60,9 +60,9 @@ Choosing and publishing SLOs to users sets expectations about how a service will
 >
 > Written by Marc Alvidrez
 >
-> Chubby [Bur06] is Google’s lock service for loosely coupled distributed systems. In the global case, we distribute Chubby instances such that each replica is in a different geographical region. Over time, we found that the failures of the global instance of Chubby consistently generated service outages, many of which were visible to end users. As it turns out, true global Chubby outages are so infrequent that service owners began to add dependencies to Chubby assuming that it would never go down. Its high reliability provided a false sense of security because the services could not function appropriately when Chubby was unavailable, however rarely that occurred.
+> Chubby [[Bur06]](https://research.google.com/archive/chubby.html) is Google’s lock service for loosely coupled distributed systems. In the global case, we distribute Chubby instances such that each replica is in a different geographical region. Over time, we found that the failures of the global instance of Chubby consistently generated service outages, many of which were visible to end users. As it turns out, true global Chubby outages are so infrequent that service owners began to add dependencies to Chubby assuming that it would never go down. Its high reliability provided a false sense of security because the services could not function appropriately when Chubby was unavailable, however rarely that occurred.
 >
-> Chubby[Bur06]是谷歌为松耦合的分布式系统提供的锁服务。在全球范围内，我们分布Chubby实例，使每个副本都在不同的地理区域。随着时间的推移，我们发现Chubby的全球实例的故障持续产生了服务中断，其中许多对终端用户来说是可见的。事实证明，真正的全球Chubby中断是如此的不频繁，以至于服务所有者开始向Chubby添加依赖，认为它永远不会中断。它的高可靠性提供了一种虚假的安全感，因为当Chubby不可用时，服务就无法正常运行，无论这种情况发生得多么少。
+> Chubby[[Bur06]](https://research.google.com/archive/chubby.html)是谷歌为松耦合的分布式系统提供的锁服务。在全球范围内，我们分布Chubby实例，使每个副本都在不同的地理区域。随着时间的推移，我们发现Chubby的全球实例的故障持续产生了服务中断，其中许多对终端用户来说是可见的。事实证明，真正的全球Chubby中断是如此的不频繁，以至于服务所有者开始向Chubby添加依赖，认为它永远不会中断。它的高可靠性提供了一种虚假的安全感，因为当Chubby不可用时，服务就无法正常运行，无论这种情况发生得多么少。
 >
 > The solution to this Chubby scenario is interesting: SRE makes sure that global Chubby meets, but does not significantly exceed, its service level objective. In any given quarter, if a true failure has not dropped availability below the target, a controlled outage will be synthesized by intentionally taking down the system. In this way, we are able to flush out unreasonable dependencies on Chubby shortly after they are added. Doing so forces service owners to reckon with the reality of distributed systems sooner rather than later.
 >
