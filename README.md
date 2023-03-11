@@ -32,5 +32,5 @@ Site Reliability Engineering: How Google Runs Production Systems中文译
   * [Chapter 4. Service Level Objectives（服务水平目标）](./src/part-2/chapter-04/service_level_objectives.md)
     * [Service Level Terminology（服务水平术语）](./src/part-2/chapter-04/service_level_terminology.md)
     * [Indicators in Practice（实践中的SLI）](./src/part-2/chapter-04/indicators_in_practice.md)
-    * [Objectives in Practice](./src/part-2/chapter-04/objectives_in_practice.md)
-    * [Agreements in Practice](./src/part-2/chapter-04/agreements_in_practice.md)
+    * [Objectives in Practice（实践中的SLO）](./src/part-2/chapter-04/objectives_in_practice.md)
+    * [Agreements in Practice（实践中的SLA）](./src/part-2/chapter-04/agreements_in_practice.md)
