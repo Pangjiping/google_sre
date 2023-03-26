@@ -39,3 +39,12 @@ These questions reflect a fundamental philosophy on pages and pagers:
 Such a perspective dissipates certain distinctions: if a page satisfies the preceding four bullets, it’s irrelevant whether the page is triggered by white-box or black-box monitoring. This perspective also amplifies certain distinctions: it’s better to spend much more effort on catching symptoms than causes; when it comes to causes, only worry about very definite, very imminent causes.
 
 这样的观点消解了某些区别：如果一个呼叫符合前面的四条规定，那么这个呼叫是由白盒还是黑盒监控触发的就无关紧要。这种观点也放大了某些区别：花更多的精力去捕捉问题而不是原因；当涉及到原因时，只需要担心非常明确的、非常紧迫的原因。
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](monitoring_distributed_systems.md)**
+
+* **Previous Section（上一节）：[As Simple as Possible, No Simpler（尽可能地简单）](as_simple_as_possible.md)**
+* **Next Section（下一节）：[Monitoring for the Long Term（长期监控）](monitoring_for_the_long_term.md)**

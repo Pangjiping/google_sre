@@ -9,3 +9,12 @@ A healthy monitoring and alerting pipeline is simple and easy to reason about. I
 Over the long haul, achieving a successful on-call rotation and product includes choosing to alert on symptoms or imminent real problems, adapting your targets to goals that are actually achievable, and making sure that your monitoring supports rapid diagnosis.
 
 从长远来看，实现成功的待命轮换和产品包括选择对症状或即将发生的实际问题发出警报，将你的目标调整为实际可以实现的目标，并确保你的监测支持快速诊断。
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](monitoring_distributed_systems.md)**
+
+* **Previous Section（上一节）：[Monitoring for the Long Term（长期监控）](monitoring_for_the_long_term.md)**
+* **Next Chapter（下一章）：[]()**

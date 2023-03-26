@@ -29,3 +29,12 @@ Take care in how you structure the granularity of your measurements. Collecting 
 This strategy allows you to observe brief CPU hotspots without incurring very high cost due to collection and retention.
 
 这种策略允许你观察短暂的CPU热点，而不会因为收集和保留而产生非常高的成本。
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](monitoring_distributed_systems.md)**
+
+* **Previous Section（上一节）：[Worrying About Your Tail (or, Instrumentation and Performance)（小心拖尾数据（或者，仪表和性能））](worrying_about_your_tail.md)**
+* **Next Section（下一节）：[As Simple as Possible, No Simpler（尽可能地简单）](as_simple_as_possible.md)**

@@ -17,3 +17,12 @@ When collecting telemetry for debugging, white-box monitoring is essential. If w
 For paging, black-box monitoring has the key benefit of forcing discipline to only nag a human when a problem is both already ongoing and contributing to real symptoms. On the other hand, for not-yet-occurring but imminent problems, black-box monitoring is fairly useless.
 
 对于呼叫来说，黑盒监控的主要好处是迫使纪律部门只在问题已经发生并导致真正的问题时才对人进行呼叫。另一方面，对于尚未发生但即将发生的问题，黑盒监控是相当无用的。
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](monitoring_distributed_systems.md)**
+
+* **Previous Section（上一节）：[Symptoms Versus Causes（症状与原因）](symptoms_versus_causes.md)**
+* **Next Section（下一节）：[The Four Golden Signals（四种黄金信号）](the_four_golden_signals.md)**

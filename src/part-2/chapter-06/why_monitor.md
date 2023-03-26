@@ -29,3 +29,12 @@ Monitoring and alerting enables a system to tell us when it’s broken, or perha
 Paging a human is a quite expensive use of an employee’s time. If an employee is at work, a page interrupts their workflow. If the employee is at home, a page interrupts their personal time, and perhaps even their sleep. When pages occur too frequently, employees second-guess, skim, or even ignore incoming alerts, sometimes even ignoring a "real" page that’s masked by the noise. Outages can be prolonged because other noise interferes with a rapid diagnosis and fix. Effective alerting systems have good signal and very low noise.
 
 呼叫是对员工时间的一种相当昂贵的使用。如果员工在工作中，呼叫会打断他们的工作流程。如果员工在家里，呼叫会打断他们的个人时间，甚至可能打断他们的睡眠。当呼叫出现得太频繁时，员工会略过，甚至忽略传来的警报，有时甚至忽略被噪音掩盖的“真实”呼叫。由于其他噪音干扰了快速诊断和修复，故障可能会被延长。有效的警报系统具有良好的信号和非常低的噪音。
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](monitoring_distributed_systems.md)**
+
+* **Previous Section（上一节）：[Definitions（定义）](definitions.md)**
+* **Next Section（下一节）：[Setting Reasonable Expectations for Monitoring（设定合理的监控期望值）](setting_reasonable_expectations_for_monitoring.md)**

@@ -49,3 +49,12 @@ Finally, saturation is also concerned with predictions of impending saturation, 
 If you measure all four golden signals and page a human when one signal is problematic (or, in the case of saturation, nearly problematic), your service will be at least decently covered by monitoring.
 
 如果你测量所有四个黄金信号，并在一个信号出现问题（或者在饱和的情况下，几乎出现问题）时呼叫人，那么你的服务至少会被监控覆盖得很好。
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](monitoring_distributed_systems.md)**
+
+* **Previous Section（上一节）：[Black-Box Versus White-Box（黑盒与白盒）](black-box_versus_white-box.md)**
+* **Next Section（下一节）：[Worrying About Your Tail (or, Instrumentation and Performance)（小心拖尾数据（或者，仪表和性能））](worrying_about_your_tail.md)**

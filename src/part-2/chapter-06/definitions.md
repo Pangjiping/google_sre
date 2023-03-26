@@ -4,7 +4,7 @@
 
 There’s no uniformly shared vocabulary for discussing all topics related to monitoring. Even within Google, usage of the following terms varies, but the most common interpretations are listed here.
 
-在讨论与监控有关的话题时，没有统一的词汇。即使在谷歌内部，以下术语的用法也不尽相同，但这里列出了最常见的解释。
+在讨论与监控有关的话题时，没有统一的词汇。即使在Google内部，以下术语的用法也不尽相同，但这里列出了最常见的解释。
 
 * **Monitoring**. Collecting, processing, aggregating, and displaying real-time quantitative data about a system, such as query counts and types, error counts and types, processing times, and server lifetimes.
 * **White-box monitoring**. Monitoring based on metrics exposed by the internals of the system, including logs, interfaces like the Java Virtual Machine Profiling Interface, or an HTTP handler that emits internal statistics.
@@ -18,7 +18,7 @@ There’s no uniformly shared vocabulary for discussing all topics related to mo
 * **Push**. Any change to a service’s running software or its configuration.
 
 * **监控**。收集、处理、汇总和显示系统的实时定量数据，如查询次数和类型、错误次数和类型、处理时间和服务器寿命。
-* **白盒监控**。基于系统内部暴露的指标进行监控，包括日志、像Java虚拟机剖析接口这样的接口，或者是发送内部统计数据的HTTP处理器。
+* **白盒监控**。基于系统内部暴露的指标进行监控，包括日志、像JVM剖析接口这样的接口，或者是发送内部统计数据的HTTP处理器。
 * **黑盒监控**。测试外部可见的行为，就像用户看到的那样。
 * **仪表板**。一个应用程序（通常是基于网络的），提供一个服务的核心指标的摘要视图。仪表盘可能有过滤器、选择器等，但它是预先建立的，以暴露对其用户最重要的指标。仪表盘还可以显示团队信息，如票据队列长度、高优先级的bug列表、特定责任区的当前待命工程师，或最近的推送。
 * **警报**。一个打算由人阅读的通知，它被推送到一个系统，如一个错误或票据队列，一个电子邮件别名，或一个呼叫器。分别来说，这些警报被分为票据、电子邮件警报和呼叫。
@@ -27,3 +27,11 @@ There’s no uniformly shared vocabulary for discussing all topics related to mo
   * 彼此相关：例如，一个缓存服务器和一个网络服务器
   * 不相关的服务共享硬件：例如，代码库和配置系统（如Puppet或Chef）的主机
 * **推送**。对一个服务的运行软件或其配置的任何改变。
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](monitoring_distributed_systems.md)**
+
+* **Next Section（下一节）：[Why Monitor?（为什么要监控）](why_monitor.md)**

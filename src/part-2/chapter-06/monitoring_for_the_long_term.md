@@ -18,7 +18,7 @@ It’s important that decisions about monitoring be made with long-term goals in
 
 Google’s internal infrastructure is typically offered and measured against a service level objective (SLO; see Chapter 4). Many years ago, the Bigtable service’s SLO was based on a synthetic well-behaved client’s mean performance. Because of problems in Bigtable and lower layers of the storage stack, the mean performance was driven by a "large" tail: the worst 5% of requests were often significantly slower than the rest.
 
-谷歌的内部基础设施通常是根据[SLO](./../chapter-04/service_level_objectives.md)来提供和衡量的。许多年前，Bigtable服务的SLO是基于一个合成的行为良好的客户端的平均性能。由于Bigtable和存储栈下层的问题，平均性能被“大”拖尾所驱动：最差的5%的请求往往比其他请求慢得多。
+Google的内部基础设施通常是根据[SLO](./../chapter-04/service_level_objectives.md)来提供和衡量的。许多年前，Bigtable服务的SLO是基于一个合成的行为良好的客户端的平均性能。由于Bigtable和存储栈下层的问题，平均性能被“大”拖尾所驱动：最差的5%的请求往往比其他请求慢得多。
 
 Email alerts were triggered as the SLO approached, and paging alerts were triggered when the SLO was exceeded. Both types of alerts were firing voluminously, consuming unacceptable amounts of engineering time: the team spent significant amounts of time triaging the alerts to find the few that were really actionable, and we often missed the problems that actually affected users, because so few of them did. Many of the pages were non-urgent, due to well-understood problems in the infrastructure, and had either rote responses or received no response.
 
@@ -67,3 +67,12 @@ Pages with rote, algorithmic responses should be a red flag. Unwillingness on th
 A common theme connects the previous examples of Bigtable and Gmail: a tension between short-term and long-term availability. Often, sheer force of effort can help a rickety system achieve high availability, but this path is usually short-lived and fraught with burnout and dependence on a small number of heroic team members. Taking a controlled, short-term decrease in availability is often a painful, but strategic trade for the long-run stability of the system. It’s important not to think of every page as an event in isolation, but to consider whether the overall level of paging leads toward a healthy, appropriately available system with a healthy, viable team and long-term outlook. We review statistics about page frequency (usually expressed as incidents per shift, where an incident might be composed of a few related pages) in quarterly reports with management, ensuring that decision makers are kept up to date on the pager load and overall health of their teams.
 
 一个共同的主题连接着前面的Bigtable和Gmail的例子：短期和长期可用性之间的矛盾。通常，纯粹的努力可以帮助一个摇摇欲坠的系统实现高可用性，但这条道路通常是短暂的，充满了倦怠和对少数团队成员的依赖。采取可控的、短期的降低可用性的做法往往是一种痛苦的、但对系统的长期稳定性来说是战略性的无权衡。重要的是，不要把每一个呼叫看作是一个孤立的事件，而是要考虑整体的寻呼水平是否导致一个健康的、适当的可用系统，以及一个健康的、可行的团队和长期前景。我们在与管理层的季度报告中审查有关传呼频率的统计数据（通常表示为每班的事件，其中一个事件可能由几个相关的传呼组成），确保决策者能够及时了解传呼机的负载和团队的整体健康状况。
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](monitoring_distributed_systems.md)**
+
+* **Previous Section（上一节）：[Tying These Principles Together（将这些原则联系起来）](tying_these_principles_together.md)**
+* **Next Section（下一节）：[Conclusion（总结）](conclusion.md)**

@@ -13,4 +13,4 @@ If we all commit to eliminate a bit of toil each week with some good engineering
 **[Back to contents of the chapter（返回章节目录）](eliminating_toil.md)**
 
 * **Previous Section（上一节）：[Is Toil Always Bad?（劳作总是不好的吗？）](is_toil_always_bad.md)**
-* **Next Chapter（下一章）：[]()**
+* **Next Chapter（下一章）：[Monitoring Distributed Systems（监控分布式系统）](./../chapter-06/monitoring_distributed_systems.md)**

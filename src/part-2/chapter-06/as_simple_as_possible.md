@@ -32,4 +32,13 @@ Therefore, design your monitoring system with an eye toward simplicity. In choos
 
 In Google’s experience, basic collection and aggregation of metrics, paired with alerting and dashboards, has worked well as a relatively standalone system. (In fact Google’s monitoring system is broken up into several binaries, but typically people learn about all aspects of these binaries.) It can be tempting to combine monitoring with other aspects of inspecting complex systems, such as detailed system profiling, single- process debugging, tracking details about exceptions or crashes, load testing, log collection and analysis, or traffic inspection. While most of these subjects share commonalities with basic monitoring, blending together too many results in overly complex and fragile systems. As in many other aspects of software engineering, maintaining distinct systems with clear, simple, loosely coupled points of integration is a better strategy (for example, using web APIs for pulling summary data in a format that can remain constant over an extended period of time).
 
-根据谷歌的经验，基本的指标收集和汇总，再配上警报和仪表盘，作为一个相对独立的系统，效果不错。（事实上，谷歌的监控系统被分解成几个部分，但通常人们会了解这些部分的所有方面）。将监控与检查复杂系统的其他方面结合起来可能是很诱人的，比如详细的系统剖析、单一的进程调试、跟踪异常或崩溃的细节、负载测试、日志收集和分析或流量检查。虽然这些主题中的大多数与基本监控有共同之处，但将太多的主题混合在一起会导致系统过于复杂和脆弱。就像软件工程的许多其他方面一样，维护具有明确、简单、松散耦合的集成点的不同系统是一个更好的策略（例如，使用Web APIs来拉取摘要数据，其格式可以在很长一段时间内保持不变）。
+根据Google的经验，基本的指标收集和汇总，再配上警报和仪表盘，作为一个相对独立的系统，效果不错。（事实上，Google的监控系统被分解成几个部分，但通常人们会了解这些部分的所有方面）。将监控与检查复杂系统的其他方面结合起来可能是很诱人的，比如详细的系统剖析、单一的进程调试、跟踪异常或崩溃的细节、负载测试、日志收集和分析或流量检查。虽然这些主题中的大多数与基本监控有共同之处，但将太多的主题混合在一起会导致系统过于复杂和脆弱。就像软件工程的许多其他方面一样，维护具有明确、简单、松散耦合的集成点的不同系统是一个更好的策略（例如，使用Web APIs来拉取摘要数据，其格式可以在很长一段时间内保持不变）。
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](monitoring_distributed_systems.md)**
+
+* **Previous Section（上一节）：[Choosing an Appropriate Resolution for Measurements（为测量选择一个合适的分辨率）](choosing_an_appropriate_resolution_for_measurements.md)**
+* **Next Section（下一节）：[Tying These Principles Together（将这些原则联系起来）](tying_these_principles_together.md)**
