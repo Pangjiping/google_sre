@@ -1,6 +1,6 @@
 # Site Reliability Engineering
 
-Site Reliability Engineering: How Google Runs Production Systems中文译
+[Site Reliability Engineering: How Google Runs Production Systems](https://ebooksss.oss-cn-beijing.aliyuncs.com/google%20SRE.pdf)中文译
 
 更新中...
 
