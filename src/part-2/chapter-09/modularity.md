@@ -1,0 +1,9 @@
+## **Modularity**
+
+Expanding outward from APIs and single binaries, many of the rules of thumb that apply to object-oriented programming also apply to the design of distributed systems. The ability to make changes to parts of the system in isolation is essential to creating a supportable system. Specifically, loose coupling between binaries, or between binaries and configuration, is a simplicity pattern that simultaneously promotes developer agility and system stability. If a bug is discovered in one program that is a component of a larger system, that bug can be fixed and pushed to production independent of the rest of the system.
+
+While the modularity that APIs offer may seem straightforward, it is not so apparent that the notion of modularity also extends to how changes to APIs are introduced. Just a single change to an API can force developers to rebuild their entire system and run the risk of introducing new bugs. Versioning APIs allows developers to continue to use the version that their system depends upon while they upgrade to a newer version in a safe and considered way. The release cadence can vary throughout a system, instead of requiring a full production push of the entire system every time a feature is added or improved.
+
+As a system grows more complex, the separation of responsibility between APIs and between binaries becomes increasingly important. This is a direct analogy to object- oriented class design: just as it is understood that it is poor practice to write a "grab bag" class that contains unrelated functions, it is also poor practice to create and put into production a "util" or "misc" binary. A well-designed distributed system consists of collaborators, each of which has a clear and well-scoped purpose.
+
+The concept of modularity also applies to data formats. One of the central strengths and design goals of Google’s protocol buffers3 was to create a wire format that was backward and forward compatible.
