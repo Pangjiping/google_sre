@@ -56,3 +56,12 @@ Individual project teams decide when release engineering becomes involved in a p
 > * [Maintaining Consistency in a Massively Parallel Environment](https://www.usenix.org/conference/ucms13/summit-program/presentation/mcnutt), USENIX Configuration Management Summit 2013, [[McN13]](https://www.usenix.org/conference/ucms13/summit-program/presentation/mcnutt)
 > * [The 10 Commandments of Release Engineering](https://www.youtube.com/watch?v=RNMjYV_UsQ8), 2nd International Workshop on Release Engineering 2014, [[McN14b]](https://www.youtube.com/watch?v=RNMjYV_UsQ8)
 > * [Distributing Software in a Massively Parallel Environment](https://www.usenix.org/conference/lisa14/conference-program/presentation/mcnutt), LISA 2014, [[McN14c]](https://www.usenix.org/conference/lisa14/conference-program/presentation/mcnutt)
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](release_engineering.md)**
+
+* **Previous Section（上一节）：[Continuous Build and Deployment（持续集成和部署）](continuous_build_and_deployment.md)**
+* **Next Section（下一节）：[Conclusions（总结）](conclusions.md)**
