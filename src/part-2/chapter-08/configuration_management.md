@@ -26,10 +26,19 @@ We can leverage MPM’s labeling feature to indicate which versions of MPM packa
 
 我们可以利用MPM的标签功能来指示应该一起安装哪些版本的MPM包。可以将`much_ado`标签应用于上一段中描述的MPM包，这使我们可以使用此标签获取两个包。当构建项目的新版本时，`much_ado`标签将应用于新包。因为这些标签在MPM包的命名空间中是唯一的，所以只会使用带有该标签的最新包。
 
-**Read configuration files from an external store**. Some projects have configuration files that need to change frequently or dynamically (i.e., while the binary is running). These files can be stored in Chubby, Bigtable, or our source-based filesystem [Kem11].
+**Read configuration files from an external store**. Some projects have configuration files that need to change frequently or dynamically (i.e., while the binary is running). These files can be stored in Chubby, Bigtable, or our source-based filesystem [[Kem11]](https://google-engtools.blogspot.com/2011/08/build-in-cloud-how-build-system-works.html).
 
-**从外部存储读取配置文件。**某些项目的配置文件需要经常或动态更改。这些文件可以存储在Chubby、Bigtable或我们基于源代码的文件系统 [Kem11] 中。
+**从外部存储读取配置文件。**某些项目的配置文件需要经常或动态更改。这些文件可以存储在Chubby、Bigtable或我们基于源代码的文件系统[[Kem11]](https://google-engtools.blogspot.com/2011/08/build-in-cloud-how-build-system-works.html)中。
 
 In summary, project owners consider the different options for distributing and managing configuration files and decide which works best on a case-by-case basis.
 
 总而言之，项目所有者会考虑用于分发和管理配置文件的不同选项，并根据具体情况决定哪种方式最有效。
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](release_engineering.md)**
+
+* **Previous Section（上一节）：[Continuous Build and Deployment（持续集成和部署）](continuous_build_and_deployment.md)**
+* **Next Section（下一节）：[Conclusions（总结）](conclusions.md)**

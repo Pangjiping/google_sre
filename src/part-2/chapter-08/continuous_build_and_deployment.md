@@ -54,9 +54,9 @@ To complement the continuous test system, we use an independent testing environm
 
 ### **打包**
 
-Software is distributed to our production machines via the Midas Package Manager (MPM) [[McN14c]](). MPM assembles packages based on Blaze rules that list the build artifacts to include, along with their owners and permissions. Packages are named (e.g., search/shakespeare/frontend), versioned with a unique hash, and signed to ensure authenticity. MPM supports applying labels to a particular version of a package. Rapid applies a label containing the build ID, which guarantees that a package can be uniquely referenced using the name of the package and this label.
+Software is distributed to our production machines via the Midas Package Manager (MPM) [[McN14c]](https://www.usenix.org/conference/lisa14/conference-program/presentation/mcnutt). MPM assembles packages based on Blaze rules that list the build artifacts to include, along with their owners and permissions. Packages are named (e.g., search/shakespeare/frontend), versioned with a unique hash, and signed to ensure authenticity. MPM supports applying labels to a particular version of a package. Rapid applies a label containing the build ID, which guarantees that a package can be uniquely referenced using the name of the package and this label.
 
-软件通过Midas包管理器（MPM）[[McN14c]]()分发到我们的生产机器。MPM根据列出要包含的构建组件及其所有者和权限的Blaze规则组装包。包被命名（例如search/shakespeare/frontend），使用唯一的散列进行版本控制，并签名以确保真实性。MPM支持将标签应用于特定版本的包。Rapid应用包含构建ID的标签，这保证可以使用包的名称和此标签来唯一引用包。
+软件通过Midas包管理器（MPM）[[McN14c]](https://www.usenix.org/conference/lisa14/conference-program/presentation/mcnutt)分发到我们的生产机器。MPM根据列出要包含的构建组件及其所有者和权限的Blaze规则组装包。包被命名（例如search/shakespeare/frontend），使用唯一的散列进行版本控制，并签名以确保真实性。MPM支持将标签应用于特定版本的包。Rapid应用包含构建ID的标签，这保证可以使用包的名称和此标签来唯一引用包。
 
 Labels can be applied to an MPM package to indicate a package’s location in the release process (e.g., dev, canary, or production). If you apply an existing label to a new package, the label is automatically moved from the old package to the new package. For example: if a package is labeled as canary, someone subsequently installing the canary version of that package will automatically receive the newest version of the package with the label canary.
 
@@ -122,3 +122,12 @@ With Sisyphus, the rollout process can be as simple or complicated as necessary.
 Our goal is to fit the deployment process to the risk profile of a given service. In development or pre-production environments, we may build hourly and push releases automatically when all tests pass. For large user-facing services, we may push by starting in one cluster and expand exponentially until all clusters are updated. For sensitive pieces of infrastructure, we may extend the rollout over several days, interleaving them across instances in different geographic regions.
 
 我们的目标是使部署过程适应给定服务的风险状况。在开发或预生产环境中，我们可能每小时构建一次，并在所有测试通过后自动推送发布。对于面向用户的大型服务，我们可能会从一个集群开始进行推送，然后呈指数级扩展，直到所有集群都更新完毕。对于基础设施的敏感部分，我们可能会将推送时间延长几天，将它们交错在不同地理区域的实例中。
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](release_engineering.md)**
+
+* **Previous Section（上一节）：[Configuration Management（配置管理）](configuration_management.md)**
+* **Next Chapter（下一章）：[]()**

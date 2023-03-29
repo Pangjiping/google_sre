@@ -67,3 +67,12 @@ Several layers of security and access control determine who can perform specific
 Almost all changes to the codebase require a code review, which is a streamlined action integrated into our normal developer workflow. Our automated release system produces a report of all changes contained in a release, which is archived with other build artifacts. By allowing SREs to understand what changes are included in a new release of a project, this report can expedite troubleshooting when there are problems with a release.
 
 几乎所有对代码库的更改都需要代码审查，这是集成到我们正常开发人员工作流程中的简化操作。我们的自动发布系统生成一份包含在发布中的所有更改的报告，该报告与其他构建日志一起存档。通过让SRE了解项目的新版本中包含哪些更改，此报告可以在版本出现问题时加快故障排除。
+
+<br>
+
+---
+
+**[Back to contents of the chapter（返回章节目录）](release_engineering.md)**
+
+* **Previous Section（上一节）：[The Role of a Release Engineer（发布工程师的角色）](the_role_of_a_release_engineer.md)**
+* **Next Section（下一节）：[Continuous Build and Deployment（持续集成和部署）](continuous_build_and_deployment.md)**
