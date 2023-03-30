@@ -64,4 +64,4 @@ Individual project teams decide when release engineering becomes involved in a p
 **[Back to contents of the chapter（返回章节目录）](release_engineering.md)**
 
 * **Previous Section（上一节）：[Continuous Build and Deployment（持续集成和部署）](continuous_build_and_deployment.md)**
-* **Next Chapter（下一章）：[Simplicity（简洁性）](../chapter-09/simplicity.md)**
+* **Next Chapter（下一章）：[Simplicity（简单性）](../chapter-09/simplicity.md)**

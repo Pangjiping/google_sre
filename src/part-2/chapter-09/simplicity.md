@@ -1,6 +1,6 @@
 # **Simplicity**
 
-# **简洁性**
+# **简单性**
 
 > Written by Max Luebbe
 >
