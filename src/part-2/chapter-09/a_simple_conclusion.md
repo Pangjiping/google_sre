@@ -13,4 +13,4 @@ This chapter has repeated one theme over and over: software simplicity is a prer
 **[Back to contents of the chapter（返回章节目录）](simplicity.md)**
 
 * **Previous Section（上一节）：[Release Simplicity（发布简洁性）](release_simplicity.md)**
-* **Next Chapter（下一章）：[]()**
+* **Next Part（下一部分）：[Practices（实践）](../../part-3/practices.md)**
