@@ -17,4 +17,4 @@ Over the long haul, achieving a successful on-call rotation and product includes
 **[Back to contents of the chapter（返回章节目录）](monitoring_distributed_systems.md)**
 
 * **Previous Section（上一节）：[Monitoring for the Long Term（长期监控）](monitoring_for_the_long_term.md)**
-* **Next Chapter（下一章）：[]()**
+* **Next Chapter（下一章）：[The Evolution of Automation at Google（Google的自动化进程）](../chapter-07/the_evolution_of_automation_at_google.md)**
